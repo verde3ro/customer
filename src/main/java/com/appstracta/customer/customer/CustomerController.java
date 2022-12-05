@@ -33,7 +33,7 @@ public class CustomerController {
 	}
 
 	@GetMapping("/{id}")
-	public Mono<ResponseEntity<Customer>> ver(@PathVariable String id) {
+	public Mono<ResponseEntity<Customer>> findById(@PathVariable String id) {
 		return service.
 				findById(id)
 				.map(p -> ResponseEntity
