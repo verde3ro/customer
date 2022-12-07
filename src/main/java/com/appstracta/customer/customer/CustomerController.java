@@ -22,7 +22,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/customer")
+@RequestMapping
 @RequiredArgsConstructor
 public class CustomerController {
 	private final ICustomerService service;
